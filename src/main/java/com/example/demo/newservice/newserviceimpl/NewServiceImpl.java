@@ -23,11 +23,13 @@ public class NewfileServiceImpl implements NewfileService {
 
     @Override
     public List<NewfileEntity> getall() {
-        return 
+        return  rep.findall(id);
     }
 
     @Override
     public NewfileEntity update(Long id, NewfileEntity newfile) {
+        NewfileEntity existing = 
+        return rep.
     }
 
     @Override
