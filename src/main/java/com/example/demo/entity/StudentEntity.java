@@ -15,5 +15,17 @@ public class StudentEntity{
         this.date = date;
         this.cgpa = cgpa;
     }
-    public 
+    public String getName(){
+        return name;
+    }
+    public void setName(String name){
+        this.name = name
+    }
+    public int getID(){
+        return id;
+    }
+    public void setID(){
+        this.id = id;
+    }
+    public int
 }
