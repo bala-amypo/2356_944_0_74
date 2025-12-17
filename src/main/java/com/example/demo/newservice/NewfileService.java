@@ -5,4 +5,4 @@ import com.example.demo.newentity.NewfileEntity;
 public class NewfileService{
     NewfileEntity savedata(NewfileEntity newfile);
     NewfileEntity getidval(Long id);
-}
+},jkfn
