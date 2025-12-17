@@ -1,16 +1,16 @@
 package com.example.project.entity;
 
 import java.time.LocalDate;
-
+@Entity
 public class Studententity {
+    @Id
+    @GeneratedValue(strategy = GenrationType.IDENTITY)
+    private Integer id;
+    @GeneratedValue(strategy = GenrationType.Auto)
+    private Integer roolno;
     private String name;
-    private int id;
-    private LocalDate date;
-    private float cgpa;
-
-    public Studententity(){
-
-    }
+    @Column(name=unique)
+    private String email;
 
     public Studententity(String name, int id, LocalDate date, float cgpa) {
         this.name = name;
