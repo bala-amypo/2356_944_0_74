@@ -2,11 +2,11 @@ package com.example.demo.sercice;
 import java.util.List;
 
 import java.util.Optional;
-import com.example.demo.entity.Student;
+import com.example.demo.entity.StudentEntity;
 
 public interface StudentService{
-    Student insertStudent(Student st);
-    List<Student> getAllStudents();
-    Optional<Student> getOneStudent(int id);
-    void deleteStudent(int id);
+    StudentEntity postdata(StudentEntity stu);
+    List<StudentEntity> getdata();
+    StudentEntity updatedata(int id,StudentEntity std);
+    void deletedata(int id);
 }
