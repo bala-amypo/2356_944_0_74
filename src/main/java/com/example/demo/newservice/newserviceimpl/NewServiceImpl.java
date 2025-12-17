@@ -18,7 +18,7 @@ public class NewfileServiceImpl implements NewfileService {
 
     @Override
     public NewfileEntity getidval(Long id) {
-        
+        return mp.get(id)
     }
 
     @Override
