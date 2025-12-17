@@ -1,6 +1,9 @@
 package com.example.demo.newentity;
 
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.validation.constrations.Email;
 import jakarta.validation.constrations.NotBlank;
 
 public class NewfileEntity{
@@ -10,6 +13,6 @@ public class NewfileEntity{
     @NotBlank(message = "should not contain spaces")
     private String name;
     @NotBlank(message = "no blank allowed")
-    @Email
+    @Email(message = "invalid format")
     private String email;
- }
+}
