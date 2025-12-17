@@ -1,8 +1,12 @@
 package.com.example.demo.newservice;
 
+import java.util.List;
 import com.example.demo.newentity.NewfileEntity;
 
 public class NewfileService{
     NewfileEntity savedata(NewfileEntity newfile);
     NewfileEntity getidval(Long id);
-},jkfn
+    List<NewfileEntity> getall();
+    NewfileEntity update(Long id,NewfileEntity newfile);
+    void delete(Long id);
+}
