@@ -31,11 +31,11 @@ public class Studentcontroller {
          return src.id(id);
     }
     @PutMapping("/put/{id}")
-    public Studententity update(@PathVariable int id,@RequestBody Studententity st){
+    public Studententity updateStudent(@PathVariable int id,@RequestBody Studententity st){
         return src.put(id,st);
     }
     @DeleteMapping("/delete/{id}")
-    public Studententity delete(@PathVariable int id){
+    public Studententity deleteStudent(@PathVariable int id){
         return src.del(id);
     }
 }
