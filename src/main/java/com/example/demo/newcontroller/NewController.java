@@ -30,10 +30,10 @@ this.service = service;
     }
     @PutMapping("/{id}")
     public Student updateStudent(@PathVariable Long id,@Valid NewfileEntity newfile){
-        return service.update(id,newfile)
+        return service.update(id,newfile);
     }
     @DeleteMapping("/{id}")
     public void delete(@PathVariable Long id){
-        return  
+        return  service.remove(id);
     }
 }
